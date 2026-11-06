@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weekly Bowl Selection | Bowl'd — Fresh Salad & Healthy Bowl Cafe</title>
+  <meta name="description" content="Manage your Bowl'd healthy salad subscription.">
+  <meta name="theme-color" content="#499A13">
+  
+  <!-- Open Graph Metadata -->
+  <meta property="og:title" content="Weekly Bowl Selection | Bowl'd">
+  <meta property="og:description" content="Manage your Bowl'd healthy salad subscription.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/images/favicon.svg">
+  
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/dashboard.css">
+</head>
+<body class="dashboard-body">
+
+  <div class="dashboard-wrapper">
+    <div class="dash-sidebar-backdrop"></div>
+    <!-- Sidebar -->
+    <aside class="dashboard-sidebar">
+      <div class="sidebar-header">
+        <a href="index.html" class="sidebar-brand">
+          <img src="assets/images/logo.svg" alt="Bowl'd" width="168" height="38">
+        </a>
+        <span class="subscriber-pill">PRO</span>
+      </div>
+      
+      <div class="sidebar-menu">
+        
+          <a href="dashboard.html" class="sidebar-link  ">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+            <span>Overview</span>
+          </a>
+        
+          <a href="my-meal-plan.html" class="sidebar-link  ">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+            <span>My Meal Plan</span>
+          </a>
+        
+          <a href="weekly-bowl-selection.html" class="sidebar-link  active">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
+            <span>Weekly Bowl Selection</span>
+          </a>
+        
+          <a href="delivery-schedule.html" class="sidebar-link  ">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            <span>Delivery Schedule</span>
+          </a>
+        
+          <a href="pause-delivery.html" class="sidebar-link  ">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><rect x="9" y="9" width="6" height="6"/></svg>
+            <span>Pause Delivery</span>
+          </a>
+        
+          <a href="nutrition-history.html" class="sidebar-link  ">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 20V10M12 20V4M6 20v-6"/></svg>
+            <span>Nutrition History</span>
+          </a>
+        
+          <a href="payment-history.html" class="sidebar-link  ">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/></svg>
+            <span>Payment History</span>
+          </a>
+        
+          <a href="manage-subscription.html" class="sidebar-link  ">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+            <span>Manage Subscription</span>
+          </a>
+        
+          <a href="profile.html" class="sidebar-link  ">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+            <span>Profile Settings</span>
+          </a>
+        
+          <a href="login.html" class="sidebar-link dash-logout-link ">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></svg>
+            <span>Sign Out</span>
+          </a>
+        
+      </div>
+      
+      <div class="sidebar-footer">
+        <a href="profile.html" class="user-mini-card">
+          <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=120&q=80" alt="Alex Morgan" class="user-avatar">
+          <div class="user-info">
+            <div class="user-name" id="sidebar-user-name">Alex Morgan</div>
+            <div class="user-plan">Balanced Week (5 Bowls)</div>
+          </div>
+        </a>
+      </div>
+    </aside>
+    
+    <!-- Main Content Area -->
+    <main class="dashboard-main">
+      <!-- Topbar -->
+      <header class="dashboard-topbar">
+        <div style="display:flex; align-items:center; gap:1rem;">
+          <button type="button" class="dash-mobile-sidebar-toggle mobile-nav-toggle" aria-label="Toggle navigation drawer">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+          </button>
+          <div class="topbar-greeting">
+            <h2>HELLO, <span id="topbar-user-greeting">ALEX</span>! READY FOR A FRESH WEEK?</h2>
+            <div class="topbar-subtitle">Demo Subscriber Account &bull; Next Delivery: Wednesday, 10:00 AM</div>
+          </div>
+        </div>
+        
+        <div class="topbar-actions">
+          <a href="index.html" class="btn btn-outline btn-sm" style="display:inline-flex; align-items:center; gap:0.4rem;">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            View Public Site
+          </a>
+          <button type="button" class="theme-toggle-btn" aria-label="Toggle theme">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          </button>
+          <button type="button" class="rtl-toggle-btn" title="Toggle RTL">RTL</button>
+        </div>
+      </header>
+      
+      <!-- Content Container -->
+      <div class="dashboard-content">
+        
+  <!-- Section 1: Tray Tracker Bar -->
+  <section class="dash-section">
+    <div class="selection-tracker" data-max="5">
+      <div>
+        <div class="tracker-text">Weekly Bowl Tray: <span id="selected-bowls-count">3</span> of 5 Bowls Selected</div>
+        <div style="font-size:0.82rem; color:var(--muted-text); margin-top:0.2rem;">Select <span id="remaining-bowls-count">2</span> more bowls to complete your delivery tray for Wednesday.</div>
+      </div>
+      <div class="tracker-pills">
+        <div class="tracker-dot filled">1</div>
+        <div class="tracker-dot filled">2</div>
+        <div class="tracker-dot filled">3</div>
+        <div class="tracker-dot">4</div>
+        <div class="tracker-dot">5</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 2: Category Filter Pills -->
+  <section class="dash-section">
+    <div class="filter-pills">
+      <button type="button" class="filter-pill active" data-filter="all">All Available</button>
+      <button type="button" class="filter-pill" data-filter="protein">High Protein</button>
+      <button type="button" class="filter-pill" data-filter="vegan">Vegan</button>
+      <button type="button" class="filter-pill" data-filter="gf">Gluten Free</button>
+    </div>
+  </section>
+
+  <!-- Section 3: Signature Bowl Catalog -->
+  <section class="dash-section">
+    <div class="dash-panel">
+      <div class="dash-panel-header">
+        <div class="dash-panel-title">Choose from Signature Bowls</div>
+        <button type="button" class="btn btn-primary btn-sm" id="save-selection-btn">Save Weekly Selection</button>
+      </div>
+      <div class="grid-3">
+        <div class="bowl-card" data-category="vegan gf">
+          <div class="bowl-card-media"><img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?auto=format&fit=crop&w=800&q=80" alt="Green Goddess"></div>
+          <div class="bowl-card-body">
+            <h4>Green Goddess Bowl</h4>
+            <p style="font-size:0.82rem; color:var(--muted-text);">Baby spinach, edamame, cucumber, avocado, pumpkin seeds.</p>
+            <div style="margin-top:auto; padding-top:1rem;">
+              <button type="button" class="btn btn-outline btn-sm dash-bowl-select-btn" data-bowl="Green Goddess Bowl" style="width:100%;">Remove Bowl</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="bowl-card" data-category="protein">
+          <div class="bowl-card-media"><img src="https://images.unsplash.com/photo-1543339308-43e59d6b73a6?auto=format&fit=crop&w=800&q=80" alt="Protein Power"></div>
+          <div class="bowl-card-body">
+            <h4>Protein Power Bowl</h4>
+            <p style="font-size:0.82rem; color:var(--muted-text);">Flame-grilled chicken, quinoa, roasted broccoli, spiced chickpeas.</p>
+            <div style="margin-top:auto; padding-top:1rem;">
+              <button type="button" class="btn btn-outline btn-sm dash-bowl-select-btn" data-bowl="Protein Power Bowl" style="width:100%;">Remove Bowl</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="bowl-card" data-category="gf">
+          <div class="bowl-card-media"><img src="https://images.unsplash.com/photo-1505253716362-afaea1d3d1af?auto=format&fit=crop&w=800&q=80" alt="Mediterranean"></div>
+          <div class="bowl-card-body">
+            <h4>Mediterranean Bowl</h4>
+            <p style="font-size:0.82rem; color:var(--muted-text);">Crisp romaine, vine tomatoes, olives, feta, Greek herb dressing.</p>
+            <div style="margin-top:auto; padding-top:1rem;">
+              <button type="button" class="btn btn-outline btn-sm dash-bowl-select-btn" data-bowl="Mediterranean Bowl" style="width:100%;">Remove Bowl</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="bowl-card" data-category="vegan">
+          <div class="bowl-card-media"><img src="https://images.unsplash.com/photo-1511690656952-34342bb7c2f2?auto=format&fit=crop&w=800&q=80" alt="Rainbow Crunch"></div>
+          <div class="bowl-card-body">
+            <h4>Rainbow Crunch Bowl</h4>
+            <p style="font-size:0.82rem; color:var(--muted-text);">Red cabbage, carrots, organic tofu, sesame seeds, ginger miso.</p>
+            <div style="margin-top:auto; padding-top:1rem;">
+              <button type="button" class="btn btn-primary btn-sm dash-bowl-select-btn" data-bowl="Rainbow Crunch Bowl" style="width:100%;">Add to Week</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="bowl-card" data-category="protein">
+          <div class="bowl-card-media"><img src="https://images.unsplash.com/photo-1547496502-affa22d38842?auto=format&fit=crop&w=800&q=80" alt="Spicy Paneer"></div>
+          <div class="bowl-card-body">
+            <h4>Spicy Paneer Warm Bowl</h4>
+            <p style="font-size:0.82rem; color:var(--muted-text);">Grilled paneer cubes, brown rice, sweet peppers, cilantro yogurt.</p>
+            <div style="margin-top:auto; padding-top:1rem;">
+              <button type="button" class="btn btn-primary btn-sm dash-bowl-select-btn" data-bowl="Spicy Paneer Bowl" style="width:100%;">Add to Week</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="bowl-card" data-category="protein">
+          <div class="bowl-card-media"><img src="https://images.unsplash.com/photo-1550304943-4f24f54ddde9?auto=format&fit=crop&w=800&q=80" alt="Modern Caesar"></div>
+          <div class="bowl-card-body">
+            <h4>Modern Caesar Bowl</h4>
+            <p style="font-size:0.82rem; color:var(--muted-text);">Romaine, herb chicken, croutons, parmesan crisps, light Caesar.</p>
+            <div style="margin-top:auto; padding-top:1rem;">
+              <button type="button" class="btn btn-primary btn-sm dash-bowl-select-btn" data-bowl="Modern Caesar Bowl" style="width:100%;">Add to Week</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 4: Custom Bowl Integration -->
+  <section class="dash-section">
+    <div class="dash-panel" style="background:var(--light-green-bg); text-align:center; padding:1.8rem;">
+      <h3>Want a 100% Custom Build in Your Box?</h3>
+      <p style="color:var(--muted-text); font-size:0.92rem; margin:0.5rem auto 1.2rem; max-width:540px;">Use our custom bowl builder to choose your specific base, proteins, and dressing. It plugs directly into your weekly tray.</p>
+      <a href="home-2.html#build-bowl" class="btn btn-primary">Open Custom Bowl Builder</a>
+    </div>
+  </section>
+
+  <!-- Section 5: Current Tray Drawer Summary -->
+  <section class="dash-section">
+    <div class="dash-panel">
+      <div class="dash-panel-header">
+        <div class="dash-panel-title">Current Tray Summary</div>
+      </div>
+      <p id="tray-summary-text" style="font-size:0.9rem; color:var(--muted-text); margin:0;">
+        Slot 1: Green Goddess Bowl &bull; Slot 2: Protein Power Bowl &bull; Slot 3: Mediterranean Bowl &bull; Slot 4: [Empty] &bull; Slot 5: [Empty]
+      </p>
+    </div>
+  </section>
+
+  <!-- Section 6: Weekly Nutritional Balance Target -->
+  <section class="dash-section">
+    <div class="dash-panel">
+      <h4>Tray Nutritional Target</h4>
+      <p style="font-size:0.85rem; color:var(--muted-text); margin:0.3rem 0 0;">
+        Your currently selected bowls provide an estimated average of 34g protein and 14g fiber per meal.
+      </p>
+    </div>
+  </section>
+
+  <!-- Section 7: Final Save & Lock-in Bar -->
+  <section class="dash-section">
+    <div style="display:flex; justify-content:space-between; align-items:center; background:var(--bg-surface); border:1px solid var(--border-subtle); padding:1.2rem 1.8rem; border-radius:var(--radius-lg);">
+      <div>
+        <strong>Ready to lock in this week's meals?</strong>
+        <span style="display:block; font-size:0.82rem; color:var(--muted-text);">Cutoff: Monday at 11:59 PM</span>
+      </div>
+      <button type="button" class="btn btn-primary" id="lock-in-selections-btn">Lock In Selections</button>
+    </div>
+  </section>
+
+      </div>
+    </main>
+  </div>
+  
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/dashboard.js"></script>
+</body>
+</html>

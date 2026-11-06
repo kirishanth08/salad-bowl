@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <circle cx="32" cy="32" r="30" fill="#EFF6E8" stroke="#8ECA3C" stroke-width="2"/>
+  <g transform="translate(4, 4)">
+    <!-- Bowl Base -->
+    <path d="M10 32 C10 46, 20 52, 28 52 C36 52, 46 46, 46 32 Z" fill="#499A13" />
+    <path d="M8 32 C16 30, 40 30, 48 32 C44 35, 12 35, 8 32 Z" fill="#8ECA3C" />
+    <!-- Leaf Cluster -->
+    <path d="M28 30 C28 16, 16 10, 10 8 C10 20, 20 28, 28 30 Z" fill="#BBDC12" />
+    <path d="M28 30 C30 14, 42 8, 46 6 C46 18, 36 28, 28 30 Z" fill="#8ECA3C" />
+    <path d="M28 30 C28 12, 24 4, 28 2 C32 4, 34 12, 28 30 Z" fill="#499A13" />
+  </g>
+</svg>

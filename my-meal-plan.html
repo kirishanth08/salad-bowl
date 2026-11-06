@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Meal Plan | Bowl'd — Fresh Salad & Healthy Bowl Cafe</title>
+  <meta name="description" content="Manage your Bowl'd healthy salad subscription.">
+  <meta name="theme-color" content="#499A13">
+  
+  <!-- Open Graph Metadata -->
+  <meta property="og:title" content="My Meal Plan | Bowl'd">
+  <meta property="og:description" content="Manage your Bowl'd healthy salad subscription.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/images/favicon.svg">
+  
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/dashboard.css">
+</head>
+<body class="dashboard-body">
+
+  <div class="dashboard-wrapper">
+    <div class="dash-sidebar-backdrop"></div>
+    <!-- Sidebar -->
+    <aside class="dashboard-sidebar">
+      <div class="sidebar-header">
+        <a href="index.html" class="sidebar-brand">
+          <img src="assets/images/logo.svg" alt="Bowl'd" width="168" height="38">
+        </a>
+        <span class="subscriber-pill">PRO</span>
+      </div>
+      
+      <div class="sidebar-menu">
+        
+          <a href="dashboard.html" class="sidebar-link  ">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+            <span>Overview</span>
+          </a>
+        
+          <a href="my-meal-plan.html" class="sidebar-link  active">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+            <span>My Meal Plan</span>
+          </a>
+        
+          <a href="weekly-bowl-selection.html" class="sidebar-link  ">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
+            <span>Weekly Bowl Selection</span>
+          </a>
+        
+          <a href="delivery-schedule.html" class="sidebar-link  ">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            <span>Delivery Schedule</span>
+          </a>
+        
+          <a href="pause-delivery.html" class="sidebar-link  ">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><rect x="9" y="9" width="6" height="6"/></svg>
+            <span>Pause Delivery</span>
+          </a>
+        
+          <a href="nutrition-history.html" class="sidebar-link  ">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 20V10M12 20V4M6 20v-6"/></svg>
+            <span>Nutrition History</span>
+          </a>
+        
+          <a href="payment-history.html" class="sidebar-link  ">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/></svg>
+            <span>Payment History</span>
+          </a>
+        
+          <a href="manage-subscription.html" class="sidebar-link  ">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+            <span>Manage Subscription</span>
+          </a>
+        
+          <a href="profile.html" class="sidebar-link  ">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+            <span>Profile Settings</span>
+          </a>
+        
+          <a href="login.html" class="sidebar-link dash-logout-link ">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></svg>
+            <span>Sign Out</span>
+          </a>
+        
+      </div>
+      
+      <div class="sidebar-footer">
+        <a href="profile.html" class="user-mini-card">
+          <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=120&q=80" alt="Alex Morgan" class="user-avatar">
+          <div class="user-info">
+            <div class="user-name" id="sidebar-user-name">Alex Morgan</div>
+            <div class="user-plan">Balanced Week (5 Bowls)</div>
+          </div>
+        </a>
+      </div>
+    </aside>
+    
+    <!-- Main Content Area -->
+    <main class="dashboard-main">
+      <!-- Topbar -->
+      <header class="dashboard-topbar">
+        <div style="display:flex; align-items:center; gap:1rem;">
+          <button type="button" class="dash-mobile-sidebar-toggle mobile-nav-toggle" aria-label="Toggle navigation drawer">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+          </button>
+          <div class="topbar-greeting">
+            <h2>HELLO, <span id="topbar-user-greeting">ALEX</span>! READY FOR A FRESH WEEK?</h2>
+            <div class="topbar-subtitle">Demo Subscriber Account &bull; Next Delivery: Wednesday, 10:00 AM</div>
+          </div>
+        </div>
+        
+        <div class="topbar-actions">
+          <a href="index.html" class="btn btn-outline btn-sm" style="display:inline-flex; align-items:center; gap:0.4rem;">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            View Public Site
+          </a>
+          <button type="button" class="theme-toggle-btn" aria-label="Toggle theme">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          </button>
+          <button type="button" class="rtl-toggle-btn" title="Toggle RTL">RTL</button>
+        </div>
+      </header>
+      
+      <!-- Content Container -->
+      <div class="dashboard-content">
+        
+  <!-- Section 1: Current Plan Specs -->
+  <section class="dash-section">
+    <div class="dash-panel">
+      <div class="dash-panel-header" style="margin-bottom:1.2rem;">
+        <div>
+          <div class="dash-panel-title">Current Active Subscription</div>
+          <span style="font-size:0.85rem; color:var(--muted-text);">Billed weekly &bull; Free contact-free cooler delivery</span>
+        </div>
+        <span class="status-pill status-active">Active</span>
+      </div>
+      <div style="background:var(--bg-surface-alt); border-radius:var(--radius-lg); padding:1.8rem; margin-bottom:1.5rem; border:1px solid var(--border-subtle);">
+        <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:1.2rem;">
+          <div>
+            <h2 style="font-size:1.85rem; margin-bottom:0.4rem; color:var(--deep-green);" id="current-plan-name-display">Balanced Week Plan (5 Bowls / Week)</h2>
+            <p style="color:var(--muted-text); font-size:0.98rem; margin:0; max-width:680px;">5 chef-crafted or custom bowls delivered weekly on Wednesday mornings. Farm-to-table Pacific Northwest organic produce.</p>
+          </div>
+          <div style="display:flex; gap:0.75rem; flex-wrap:wrap;">
+            <a href="weekly-bowl-selection.html" class="btn btn-primary btn-sm">Select Bowls</a>
+            <a href="manage-subscription.html" class="btn btn-outline btn-sm">Manage Tier</a>
+          </div>
+        </div>
+
+        <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(180px, 1fr)); gap:1.5rem; margin-top:1.8rem; padding-top:1.5rem; border-top:1px solid var(--border-subtle);">
+          <div>
+            <div style="font-size:0.8rem; color:var(--muted-text); font-weight:700; text-transform:uppercase; letter-spacing:0.04em;">Weekly Rate</div>
+            <div style="font-size:1.6rem; font-weight:900; color:var(--deep-green); margin-top:0.2rem;" id="current-plan-rate-display">$52.50 / week</div>
+            <div style="font-size:0.75rem; color:var(--muted-text); margin-top:0.2rem;">Automatic weekly billing</div>
+          </div>
+          <div>
+            <div style="font-size:0.8rem; color:var(--muted-text); font-weight:700; text-transform:uppercase; letter-spacing:0.04em;">Per Bowl Cost</div>
+            <div style="font-size:1.6rem; font-weight:900; color:var(--primary-green); margin-top:0.2rem;">$10.50 / bowl</div>
+            <div style="font-size:0.75rem; color:var(--muted-text); margin-top:0.2rem;">Save $3.00 vs cafe retail</div>
+          </div>
+          <div>
+            <div style="font-size:0.8rem; color:var(--muted-text); font-weight:700; text-transform:uppercase; letter-spacing:0.04em;">Next Delivery Drop</div>
+            <div style="font-size:1.6rem; font-weight:900; color:var(--main-text); margin-top:0.2rem;">Wednesday, Nov 11</div>
+            <div style="font-size:0.75rem; color:var(--muted-text); margin-top:0.2rem;">10:00 AM – 12:00 PM</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 2: Included Plan Benefits -->
+  <section class="dash-section">
+    <div class="dash-panel">
+      <div class="dash-panel-header">
+        <div class="dash-panel-title">What's Included in Your Tier</div>
+      </div>
+      <div class="grid-3">
+        <div class="dash-panel" style="margin:0; text-align:center;">
+          <h4>Free Chilled Delivery</h4>
+          <p style="font-size:0.82rem; color:var(--muted-text); margin-top:0.3rem;">Temperature controlled cold tote.</p>
+        </div>
+        <div class="dash-panel" style="margin:0; text-align:center;">
+          <h4>Unlimited Swaps</h4>
+          <p style="font-size:0.82rem; color:var(--muted-text); margin-top:0.3rem;">Customize your 5 bowls weekly.</p>
+        </div>
+        <div class="dash-panel" style="margin:0; text-align:center;">
+          <h4>15% Drinks Discount</h4>
+          <p style="font-size:0.82rem; color:var(--muted-text); margin-top:0.3rem;">Save on immunity juices.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 3: Switch Plan Selector -->
+  <section class="dash-section">
+    <div class="dash-panel">
+      <div class="dash-panel-header">
+        <div class="dash-panel-title">Switch Your Plan Tier</div>
+      </div>
+      <div class="grid-3">
+        <label class="dash-panel plan-tier-card" id="plan-card-starter" style="margin:0; cursor:pointer; border:2px solid var(--border-subtle); display:block;">
+          <input type="radio" name="plan_tier" value="Starter Bowl" class="plan-select-radio" style="float:right;">
+          <h4>Starter Bowl (3/Wk)</h4>
+          <div style="font-size:1.3rem; font-weight:800; color:var(--deep-green); margin:0.3rem 0;">$34.50/wk</div>
+          <p style="font-size:0.82rem; color:var(--muted-text); margin:0;">3 bowls per week. Great for light lunch routines.</p>
+        </label>
+
+        <label class="dash-panel plan-tier-card" id="plan-card-balanced" style="margin:0; cursor:pointer; border:2px solid var(--primary-green); background:var(--light-green-bg); display:block;">
+          <input type="radio" name="plan_tier" value="Balanced Week" checked class="plan-select-radio" style="float:right;">
+          <h4>Balanced Week (5/Wk)</h4>
+          <div style="font-size:1.3rem; font-weight:800; color:var(--deep-green); margin:0.3rem 0;">$52.50/wk (Current)</div>
+          <p style="font-size:0.82rem; color:var(--muted-text); margin:0;">5 bowls per week. Covers full workweek lunches.</p>
+        </label>
+
+        <label class="dash-panel plan-tier-card" id="plan-card-full" style="margin:0; cursor:pointer; border:2px solid var(--border-subtle); display:block;">
+          <input type="radio" name="plan_tier" value="Full Fresh" class="plan-select-radio" style="float:right;">
+          <h4>Full Fresh (7/Wk)</h4>
+          <div style="font-size:1.3rem; font-weight:800; color:var(--deep-green); margin:0.3rem 0;">$68.00/wk</div>
+          <p style="font-size:0.82rem; color:var(--muted-text); margin:0;">7 bowls per week with split 2-day delivery.</p>
+        </label>
+      </div>
+      <div style="margin-top:1.2rem; display:flex; justify-content:flex-end;">
+        <button type="button" class="btn btn-primary" id="save-plan-tier-btn">Confirm Plan Tier Change</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 4: Delivery Frequency Selector -->
+  <section class="dash-section">
+    <div class="dash-panel">
+      <div class="dash-panel-header">
+        <div class="dash-panel-title">Delivery Frequency</div>
+      </div>
+      <div class="grid-2">
+        <label class="dash-panel" style="margin:0; display:flex; align-items:center; gap:0.75rem; cursor:pointer;">
+          <input type="radio" name="freq" checked onchange="showToast('Weekly delivery active');">
+          <div>
+            <strong>Weekly Delivery (Standard)</strong>
+            <span style="font-size:0.8rem; color:var(--muted-text); display:block;">Delivered every Wednesday morning</span>
+          </div>
+        </label>
+        <label class="dash-panel" style="margin:0; display:flex; align-items:center; gap:0.75rem; cursor:pointer;">
+          <input type="radio" name="freq" onchange="showToast('Bi-Weekly delivery selected');">
+          <div>
+            <strong>Bi-Weekly Delivery (Every 2 Weeks)</strong>
+            <span style="font-size:0.8rem; color:var(--muted-text); display:block;">Delivered every other Wednesday</span>
+          </div>
+        </label>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 5: Add-On Subscriptions -->
+  <section class="dash-section">
+    <div class="dash-panel">
+      <div class="dash-panel-header">
+        <div class="dash-panel-title">Weekly Add-On Subscriptions</div>
+      </div>
+      <div class="grid-2">
+        <div style="display:flex; justify-content:space-between; align-items:center; padding:1rem; background:var(--bg-surface-alt); border-radius:var(--radius-md);">
+          <div>
+            <strong>Cold-Pressed Juice 4-Pack</strong>
+            <span style="display:block; font-size:0.8rem; color:var(--muted-text);">Green immunity &amp; citrus ginger (+$14.00/wk)</span>
+          </div>
+          <button type="button" class="btn btn-outline btn-sm addon-toggle-btn" data-addon="Cold-Pressed Juice 4-Pack">Add to Plan</button>
+        </div>
+
+        <div style="display:flex; justify-content:space-between; align-items:center; padding:1rem; background:var(--bg-surface-alt); border-radius:var(--radius-md);">
+          <div>
+            <strong>Artisan Herb Crisps 3-Pack</strong>
+            <span style="display:block; font-size:0.8rem; color:var(--muted-text);">Crunchy baked za'atar pita crisps (+$6.00/wk)</span>
+          </div>
+          <button type="button" class="btn btn-outline btn-sm addon-toggle-btn" data-addon="Artisan Herb Crisps 3-Pack">Add to Plan</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 6: Invoicing Quick Link -->
+  <section class="dash-section">
+    <div class="dash-panel">
+      <div class="dash-panel-header">
+        <div class="dash-panel-title">Payment &amp; Invoices</div>
+        <a href="payment-history.html" class="btn btn-outline btn-sm">View All Invoices</a>
+      </div>
+      <p style="color:var(--muted-text); font-size:0.92rem; margin:0;">
+        Currently billed to Visa ending in 4242. Next automatic renewal is scheduled for Monday, Nov 9 for $52.50.
+      </p>
+    </div>
+  </section>
+
+  <!-- Section 7: FAQs -->
+  <section class="dash-section">
+    <div class="dash-panel">
+      <h4>Plan FAQs</h4>
+      <p style="color:var(--muted-text); font-size:0.88rem; margin:0.4rem 0 0;">
+        Changes made to your plan tier before Monday 11:59 PM take effect on your very next Wednesday delivery.
+      </p>
+    </div>
+  </section>
+
+      </div>
+    </main>
+  </div>
+  
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/dashboard.js"></script>
+</body>
+</html>

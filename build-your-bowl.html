@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Build Your Own Bowl | Bowl'd — Fresh Salad & Healthy Bowl Cafe</title>
+  <meta name="description" content="Interactive step-by-step custom salad & grain bowl builder. Choose bases, proteins, vegetables, toppings, and scratch dressings with live macro calculation.">
+  <meta name="theme-color" content="#499A13">
+  
+  <!-- Open Graph Metadata -->
+  <meta property="og:title" content="Build Your Own Bowl | Bowl'd">
+  <meta property="og:description" content="Interactive step-by-step custom salad & grain bowl builder. Choose bases, proteins, vegetables, toppings, and scratch dressings with live macro calculation.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/images/favicon.svg">
+  
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="stylesheet" href="assets/css/style.css">
+  
+</head>
+<body>
+
+  <!-- Global Top Header & Sticky Navigation -->
+  <header class="site-header">
+    <div class="container navbar-container">
+      <a href="index.html" class="navbar-brand" aria-label="Bowl'd Home">
+        <img src="assets/images/logo.svg" alt="Bowl'd Fresh Salads & Bowls Logo" width="168" height="38">
+      </a>
+      
+      <!-- Primary Navigation Links -->
+      <nav class="navbar-nav" aria-label="Main Navigation">
+        <div class="nav-item nav-dropdown">
+          <a href="index.html" class="nav-link dropdown-toggle " role="button" aria-expanded="false">
+            Home
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="dropdown-chevron"><polyline points="6 9 12 15 18 9"/></svg>
+          </a>
+          <div class="dropdown-menu">
+            <a href="index.html" class="dropdown-item ">
+              <div class="dropdown-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+              </div>
+              <div class="dropdown-item-text">
+                <div class="dropdown-item-title">Home 1 (Signature)</div>
+                <div class="dropdown-item-desc">Fresh favorites, bases, &amp; subscriptions</div>
+              </div>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="dropdown-item-arrow"><polyline points="9 18 15 12 9 6"/></svg>
+            </a>
+            <a href="home-2.html" class="dropdown-item ">
+              <div class="dropdown-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a10 10 0 0 1 10 10c0 4.5-3 8-7 9.5V18a2 2 0 0 0-2-2h-2a2 2 0 0 0-2 2v3.5C5 20 2 16.5 2 12A10 10 0 0 1 12 2z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div class="dropdown-item-text">
+                <div class="dropdown-item-title">Home 2 (Editorial &amp; Builder)</div>
+                <div class="dropdown-item-desc">Interactive kitchen bowl creator</div>
+              </div>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="dropdown-item-arrow"><polyline points="9 18 15 12 9 6"/></svg>
+            </a>
+            <div class="dropdown-menu-footer">
+              <span class="dropdown-footer-tag">NEW</span>
+              <span>Try our live interactive bowl kitchen!</span>
+            </div>
+          </div>
+        </div>
+        <div class="nav-item">
+          <a href="about.html" class="nav-link ">About</a>
+        </div>
+        <div class="nav-item">
+          <a href="menu.html" class="nav-link ">Menu</a>
+        </div>
+        <div class="nav-item">
+          <a href="meal-plans.html" class="nav-link ">Meal Plans</a>
+        </div>
+        <div class="nav-item">
+          <a href="blog.html" class="nav-link ">Blog</a>
+        </div>
+        <div class="nav-item">
+          <a href="contact.html" class="nav-link ">Contact</a>
+        </div>
+      </nav>
+      
+      <!-- Navbar Controls: Theme, Direction, Portal & CTA -->
+      <div class="navbar-actions">
+        <button type="button" class="theme-toggle-btn" aria-label="Toggle theme">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+        <button type="button" class="rtl-toggle-btn" title="Toggle LTR/RTL Layout" aria-label="Toggle text direction">
+          RTL
+        </button>
+        <a href="dashboard.html" class="portal-btn" title="Subscriber Dashboard" aria-label="Subscriber Portal">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+        </a>
+        <a href="login.html" class="btn btn-sm nav-login-btn">Log In</a>
+        <a href="meal-plans.html" class="btn btn-primary btn-sm nav-subscribe-btn">Subscribe Now</a>
+        <button type="button" class="mobile-nav-toggle" aria-label="Open mobile navigation menu">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+  
+  <!-- Mobile Navigation Drawer -->
+  <div class="mobile-nav-drawer" role="dialog" aria-modal="true" aria-label="Mobile Navigation">
+    <div class="mobile-nav-header">
+      <img src="assets/images/logo.svg" alt="Bowl'd Logo" width="168" height="38">
+      <button type="button" class="mobile-nav-close modal-close-btn" aria-label="Close menu">&times;</button>
+    </div>
+    <div class="mobile-nav-links">
+      <a href="index.html" class="mobile-nav-link">Home 1 (Signature)</a>
+      <a href="home-2.html" class="mobile-nav-link">Home 2 (Editorial &amp; Bowl Builder)</a>
+      <a href="about.html" class="mobile-nav-link">About Us</a>
+      <a href="menu.html" class="mobile-nav-link">Complete Menu</a>
+      <a href="meal-plans.html" class="mobile-nav-link">Meal Plans</a>
+      <a href="nutrition.html" class="mobile-nav-link">Nutrition & Ingredients</a>
+      <a href="blog.html" class="mobile-nav-link">Blog & Recipes</a>
+      <a href="contact.html" class="mobile-nav-link">Contact Cafe</a>
+      <hr style="border:0; border-top:1px solid var(--border-subtle); margin: 1rem 0;">
+      <a href="dashboard.html" class="mobile-nav-link" style="color:var(--primary-green);">Subscriber Dashboard</a>
+      <a href="login.html" class="mobile-nav-link">Sign In</a>
+      <a href="register.html" class="mobile-nav-link">Create Account</a>
+    </div>
+    <div style="margin-top:auto; padding-top:2rem;">
+      <a href="meal-plans.html" class="btn btn-primary" style="width:100%;">Subscribe Now</a>
+    </div>
+  </div>
+<main>
+  <!-- Section 1: Hero Section -->
+  <section class="hero-section hero-bg-peppers" style="padding: 4rem 0 2.5rem;">
+    <div class="container text-center">
+      <span class="badge-tag badge-tag-lime">Now on Home Page 2</span>
+      <h1 class="hero-title">INTERACTIVE BOWL BUILDER</h1>
+      <p class="hero-desc" style="margin-inline:auto; max-width:680px;">
+        The custom bowl builder is now integrated directly into Home Page 2! Redirecting you now...
+      </p>
+      <div style="margin-top:1.5rem;">
+        <a href="home-2.html#build-bowl" class="btn btn-primary btn-lg">Launch Bowl Builder on Home 2 &rarr;</a>
+      </div>
+    </div>
+  </section>
+  <script>
+    // Instant redirect to Home Page 2 Bowl Builder
+    if (window.location.pathname.endsWith('build-your-bowl.html')) {
+      window.location.replace("home-2.html#build-bowl");
+    }
+  </script>
+
+  <div class="container" style="padding-top:2rem;">
+    <div class="builder-layout">
+      <!-- Left: 5 Interactive Sections for Steps 1-5 -->
+      <div class="builder-steps-column">
+        
+        <!-- Section 2: Step 1 Choose Your Base -->
+        <section class="builder-step-panel" id="step-base">
+          <div class="builder-step-header">
+            <div class="builder-step-title">
+              <span class="step-num">1</span>
+              <div>
+                <h3 style="margin-bottom:0.2rem;">Choose Your Base</h3>
+                <div class="step-rule">Select 1 foundation (Included in $9.00 Base Price)</div>
+              </div>
+            </div>
+          </div>
+          <div class="builder-options-grid">
+            <div class="builder-card-option selected" data-category="base" data-value="Quinoa">
+              <span class="option-badge">Ancient Grain</span>
+              <div class="option-img-thumb">
+                <img src="assets/images/ingredients/quinoa.jpg" alt="Tricolor Quinoa" loading="lazy">
+              </div>
+              <div class="option-name">Tricolor Quinoa</div>
+              <div class="option-meta"><span>180 kcal &bull; 6g P</span><span class="option-price">Included</span></div>
+            </div>
+            <div class="builder-card-option" data-category="base" data-value="Brown Rice">
+              <span class="option-badge">Whole Grain</span>
+              <div class="option-img-thumb">
+                <img src="assets/images/ingredients/brown-rice.jpg" alt="Nutty Brown Rice" loading="lazy">
+              </div>
+              <div class="option-name">Nutty Brown Rice</div>
+              <div class="option-meta"><span>190 kcal &bull; 4g P</span><span class="option-price">Included</span></div>
+            </div>
+            <div class="builder-card-option" data-category="base" data-value="Lettuce">
+              <span class="option-badge">Crisp Crunch</span>
+              <div class="option-img-thumb">
+                <img src="assets/images/ingredients/lettuce.jpg" alt="Crisp Romaine" loading="lazy">
+              </div>
+              <div class="option-name">Crisp Romaine</div>
+              <div class="option-meta"><span>30 kcal &bull; 2g P</span><span class="option-price">Included</span></div>
+            </div>
+            <div class="builder-card-option" data-category="base" data-value="Spinach">
+              <span class="option-badge">Iron Rich</span>
+              <div class="option-img-thumb">
+                <img src="assets/images/ingredients/spinach.jpg" alt="Baby Spinach" loading="lazy">
+              </div>
+              <div class="option-name">Baby Spinach</div>
+              <div class="option-meta"><span>40 kcal &bull; 4g P</span><span class="option-price">Included</span></div>
+            </div>
+            <div class="builder-card-option" data-category="base" data-value="Mixed Greens">
+              <span class="option-badge">Supergreens</span>
+              <div class="option-img-thumb">
+                <img src="assets/images/ingredients/supergreens.jpg" alt="Mixed Supergreens" loading="lazy">
+              </div>
+              <div class="option-name">Mixed Supergreens</div>
+              <div class="option-meta"><span>35 kcal &bull; 3g P</span><span class="option-price">Included</span></div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Section 3: Step 2 Choose Protein -->
+        <section class="builder-step-panel" id="step-protein">
+          <div class="builder-step-header">
+            <div class="builder-step-title">
+              <span class="step-num">2</span>
+              <div>
+                <h3 style="margin-bottom:0.2rem;">Choose Your Protein</h3>
+                <div class="step-rule">Select up to 2 proteins (Clean poultry or plant power)</div>
+              </div>
+            </div>
+          </div>
+          <div class="builder-options-grid">
+            <div class="builder-card-option selected" data-category="protein" data-value="Grilled Chicken">
+              <span class="option-badge">Lean Poultry</span>
+              <div class="option-img-thumb">
+                <img src="assets/images/ingredients/chicken.jpg" alt="Grilled Chicken" loading="lazy">
+              </div>
+              <div class="option-name">Grilled Chicken</div>
+              <div class="option-meta"><span>190 kcal &bull; 32g P</span><span class="option-price">+$3.50</span></div>
+            </div>
+            <div class="builder-card-option" data-category="protein" data-value="Paneer">
+              <span class="option-badge">Artisan Dairy</span>
+              <div class="option-img-thumb">
+                <img src="assets/images/ingredients/paneer.jpg" alt="Spiced Paneer" loading="lazy">
+              </div>
+              <div class="option-name">Spiced Paneer</div>
+              <div class="option-meta"><span>210 kcal &bull; 18g P</span><span class="option-price">+$3.00</span></div>
+            </div>
+            <div class="builder-card-option" data-category="protein" data-value="Tofu">
+              <span class="option-badge">Organic Plant</span>
+              <div class="option-img-thumb">
+                <img src="assets/images/ingredients/tofu.jpg" alt="Organic Tofu" loading="lazy">
+              </div>
+              <div class="option-name">Organic Tofu</div>
+              <div class="option-meta"><span>130 kcal &bull; 14g P</span><span class="option-price">+$2.50</span></div>
+            </div>
+            <div class="builder-card-option" data-category="protein" data-value="Chickpeas">
+              <span class="option-badge">Fiber Loaded</span>
+              <div class="option-img-thumb">
+                <img src="assets/images/ingredients/chickpeas.jpg" alt="Roasted Chickpeas" loading="lazy">
+              </div>
+              <div class="option-name">Roasted Chickpeas</div>
+              <div class="option-meta"><span>140 kcal &bull; 8g P</span><span class="option-price">+$2.00</span></div>
+            </div>
+            <div class="builder-card-option" data-category="protein" data-value="Eggs">
+              <span class="option-badge">Free-Range</span>
+              <div class="option-img-thumb">
+                <img src="assets/images/ingredients/eggs.jpg" alt="Soft-Boiled Eggs" loading="lazy">
+              </div>
+              <div class="option-name">Soft-Boiled Eggs</div>
+              <div class="option-meta"><span>140 kcal &bull; 12g P</span><span class="option-price">+$2.00</span></div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Section 4: Step 3 Choose Vegetables -->
+        <section class="builder-step-panel" id="step-veggies">
+          <div class="builder-step-header">
+            <div class="builder-step-title">
+              <span class="step-num">3</span>
+              <div>
+                <h3 style="margin-bottom:0.2rem;">Choose Fresh Vegetables</h3>
+                <div class="step-rule">Pick 3 included (Extra veggies +$0.75 each)</div>
+              </div>
+            </div>
+          </div>
+          <div class="builder-options-grid">
+            <div class="builder-card-option selected" data-category="vegetables" data-value="Cucumber">
+              <div class="option-img-thumb">
+                <img src="assets/images/ingredients/cucumber.jpg" alt="English Cucumber" loading="lazy">
+              </div>
+              <div class="option-name">English Cucumber</div>
+              <div class="option-meta"><span>16 kcal</span><span class="option-price">Included</span></div>
+            </div>
+            <div class="builder-card-option selected" data-category="vegetables" data-value="Tomato">
+              <div class="option-img-thumb">
+                <img src="assets/images/ingredients/tomato.jpg" alt="Vine Tomato" loading="lazy">
+              </div>
+              <div class="option-name">Vine Tomato</div>
+              <div class="option-meta"><span>22 kcal</span><span class="option-price">Included</span></div>
+            </div>
+            <div class="builder-card-option selected" data-category="vegetables" data-value="Carrot">
+              <div class="option-img-thumb">
+                <img src="assets/images/ingredients/carrot.jpg" alt="Shredded Carrot" loading="lazy">
+              </div>
+              <div class="option-name">Shredded Carrot</div>
+              <div class="option-meta"><span>25 kcal</span><span class="option-price">Included</span></div>
+            </div>
+            <div class="builder-card-option" data-category="vegetables" data-value="Corn">
+              <div class="option-img-thumb">
+                <img src="assets/images/ingredients/corn.jpg" alt="Sweet Corn" loading="lazy">
+              </div>
+              <div class="option-name">Sweet Corn</div>
+              <div class="option-meta"><span>45 kcal</span><span class="option-price">Included</span></div>
+            </div>
+            <div class="builder-card-option" data-category="vegetables" data-value="Broccoli">
+              <div class="option-img-thumb">
+                <img src="assets/images/ingredients/broccoli.jpg" alt="Steamed Broccoli" loading="lazy">
+              </div>
+              <div class="option-name">Steamed Broccoli</div>
+              <div class="option-meta"><span>35 kcal</span><span class="option-price">Included</span></div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Section 5: Step 4 Choose Toppings -->
+        <section class="builder-step-panel" id="step-toppings">
+          <div class="builder-step-header">
+            <div class="builder-step-title">
+              <span class="step-num">4</span>
+              <div>
+                <h3 style="margin-bottom:0.2rem;">Choose Crunch &amp; Toppings</h3>
+                <div class="step-rule">Select your favorite texture accents</div>
+              </div>
+            </div>
+          </div>
+          <div class="builder-options-grid">
+            <div class="builder-card-option" data-category="toppings" data-value="Seeds">
+              <div class="option-img-thumb">
+                <img src="assets/images/ingredients/pepitas.jpg" alt="Roasted Pepitas" loading="lazy">
+              </div>
+              <div class="option-name">Roasted Pepitas</div>
+              <div class="option-meta"><span>70 kcal</span><span class="option-price">Included</span></div>
+            </div>
+            <div class="builder-card-option" data-category="toppings" data-value="Nuts">
+              <div class="option-img-thumb">
+                <img src="assets/images/ingredients/walnuts.jpg" alt="Toasted Walnuts" loading="lazy">
+              </div>
+              <div class="option-name">Toasted Walnuts</div>
+              <div class="option-meta"><span>90 kcal</span><span class="option-price">+$0.50</span></div>
+            </div>
+            <div class="builder-card-option" data-category="toppings" data-value="Croutons">
+              <div class="option-img-thumb">
+                <img src="assets/images/ingredients/croutons.jpg" alt="Sourdough Croutons" loading="lazy">
+              </div>
+              <div class="option-name">Sourdough Croutons</div>
+              <div class="option-meta"><span>60 kcal</span><span class="option-price">Included</span></div>
+            </div>
+            <div class="builder-card-option selected" data-category="toppings" data-value="Avocado">
+              <div class="option-img-thumb">
+                <img src="assets/images/ingredients/avocado.jpg" alt="Sliced Haas Avocado" loading="lazy">
+              </div>
+              <div class="option-name">Sliced Haas Avocado</div>
+              <div class="option-meta"><span>120 kcal</span><span class="option-price">+$1.50</span></div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Section 6: Step 5 Choose Dressing -->
+        <section class="builder-step-panel" id="step-dressing">
+          <div class="builder-step-header">
+            <div class="builder-step-title">
+              <span class="step-num">5</span>
+              <div>
+                <h3 style="margin-bottom:0.2rem;">Choose Handcrafted Dressing</h3>
+                <div class="step-rule">1 dressing included on the side</div>
+              </div>
+            </div>
+          </div>
+          <div class="builder-options-grid">
+            <div class="builder-card-option selected" data-category="dressing" data-value="Lemon Herb">
+              <span class="option-badge">Zesty</span>
+              <div class="option-img-thumb">
+                <img src="assets/images/ingredients/lemon-herb.jpg" alt="Lemon Herb Dressing" loading="lazy">
+              </div>
+              <div class="option-name">Lemon Herb</div>
+              <div class="option-meta"><span>65 kcal</span><span class="option-price">Included</span></div>
+            </div>
+            <div class="builder-card-option" data-category="dressing" data-value="Tahini">
+              <span class="option-badge">Nutty</span>
+              <div class="option-img-thumb">
+                <img src="assets/images/ingredients/tahini.jpg" alt="Creamy Tahini Dressing" loading="lazy">
+              </div>
+              <div class="option-name">Creamy Tahini</div>
+              <div class="option-meta"><span>90 kcal</span><span class="option-price">Included</span></div>
+            </div>
+            <div class="builder-card-option" data-category="dressing" data-value="Ranch">
+              <span class="option-badge">Classic</span>
+              <div class="option-img-thumb">
+                <img src="assets/images/ingredients/ranch.jpg" alt="Herbed Ranch Dressing" loading="lazy">
+              </div>
+              <div class="option-name">Herbed Ranch</div>
+              <div class="option-meta"><span>110 kcal</span><span class="option-price">Included</span></div>
+            </div>
+            <div class="builder-card-option" data-category="dressing" data-value="Honey Mustard">
+              <span class="option-badge">Sweet Tang</span>
+              <div class="option-img-thumb">
+                <img src="assets/images/ingredients/honey-mustard.jpg" alt="Honey Mustard Dressing" loading="lazy">
+              </div>
+              <div class="option-name">Honey Mustard</div>
+              <div class="option-meta"><span>85 kcal</span><span class="option-price">Included</span></div>
+            </div>
+            <div class="builder-card-option" data-category="dressing" data-value="Balsamic">
+              <span class="option-badge">Rich</span>
+              <div class="option-img-thumb">
+                <img src="assets/images/ingredients/balsamic.jpg" alt="Aged Balsamic Dressing" loading="lazy">
+              </div>
+              <div class="option-name">Aged Balsamic</div>
+              <div class="option-meta"><span>50 kcal</span><span class="option-price">Included</span></div>
+            </div>
+          </div>
+        </section>
+
+      </div>
+
+      <!-- Right Column: Sticky Live Bowl Summary Drawer -->
+      <aside class="builder-summary-column">
+        <div class="builder-summary-card">
+          <div class="builder-summary-header">
+            <span class="badge-tag badge-tag-lime">Live Tray Preview</span>
+            <h3 style="margin:0.4rem 0;">YOUR CUSTOM BOWL</h3>
+            <p style="font-size:0.85rem; color:var(--muted-text);">Calculated in real-time as you pick ingredients</p>
+          </div>
+
+          <!-- Visual Graphic Bowl Container -->
+          <div class="builder-visual-bowl">
+            <div style="font-size:0.75rem; font-weight:800; color:var(--deep-green); margin-bottom:0.5rem; text-transform:uppercase; letter-spacing:0.05em;">Bowl Assembly</div>
+            <div class="bowl-graphic-preview" id="bowl-live-preview-tags">
+              <!-- Dynamically populated tags -->
+            </div>
+          </div>
+
+          <!-- Line Items Summary -->
+          <div class="builder-summary-list">
+            <div class="summary-line-item">
+              <span class="summary-line-label">Base Foundation:</span>
+              <span class="summary-line-value" id="summary-base">Quinoa</span>
+            </div>
+            <div class="summary-line-item">
+              <span class="summary-line-label">Protein(s):</span>
+              <span class="summary-line-value" id="summary-protein">Grilled Chicken</span>
+            </div>
+            <div class="summary-line-item">
+              <span class="summary-line-label">Vegetables:</span>
+              <span class="summary-line-value" id="summary-veg">Cucumber, Tomato, Carrot</span>
+            </div>
+            <div class="summary-line-item">
+              <span class="summary-line-label">Toppings:</span>
+              <span class="summary-line-value" id="summary-toppings">Avocado</span>
+            </div>
+            <div class="summary-line-item">
+              <span class="summary-line-label">Dressing:</span>
+              <span class="summary-line-value" id="summary-dressing">Lemon Herb</span>
+            </div>
+          </div>
+
+          <!-- Macro Progress Visualizers (CSS only, no chart library) -->
+          <div class="builder-nutrition-bars">
+            <div style="display:flex; justify-content:space-between; font-weight:800; font-size:0.85rem; margin-bottom:0.6rem; color:var(--deep-green);">
+              <span>Total Energy</span>
+              <span id="summary-calories">580 kcal</span>
+            </div>
+            
+            <div class="macro-bar-row">
+              <div class="macro-info"><span>Protein</span><span id="summary-p-val">42g</span></div>
+              <div class="macro-progress"><div class="macro-fill macro-fill-protein" id="summary-p-bar" style="width: 80%;"></div></div>
+            </div>
+            <div class="macro-bar-row">
+              <div class="macro-info"><span>Carbs</span><span id="summary-c-val">46g</span></div>
+              <div class="macro-progress"><div class="macro-fill macro-fill-carbs" id="summary-c-bar" style="width: 65%;"></div></div>
+            </div>
+            <div class="macro-bar-row">
+              <div class="macro-info"><span>Fats</span><span id="summary-f-val">22g</span></div>
+              <div class="macro-progress"><div class="macro-fill macro-fill-fats" id="summary-f-bar" style="width: 50%;"></div></div>
+            </div>
+          </div>
+
+          <!-- Total Price Row -->
+          <div class="builder-total-row">
+            <span style="font-weight:700; color:var(--deep-green); font-size:1.1rem;">Calculated Price:</span>
+            <span class="builder-total-price" id="summary-total-price">$14.00</span>
+          </div>
+
+          <!-- Actions -->
+          <div style="display:flex; flex-direction:column; gap:0.75rem;">
+            <button type="button" class="btn btn-primary btn-lg" id="add-custom-bowl-btn" style="width:100%;">Add Bowl to Weekly Tray</button>
+            <button type="button" class="btn btn-outline btn-sm" id="reset-builder-btn" style="width:100%;">Reset to Defaults</button>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </div>
+
+  <!-- Section 7: Chef's Pro Customization Guidance -->
+  <section class="section-tint" style="margin-top:4rem;">
+    <div class="container container-sm text-center">
+      <span class="badge-tag">Chef's Flavor Formula</span>
+      <h2 class="section-title">PRO TIPS FOR BUILDING THE PERFECT BOWL</h2>
+      <p class="section-subtitle">Balance hearty warm grains with cold crisp greens. For example, pair warm nutty brown rice with cold baby spinach and crunchy cucumber to create exciting texture contrast in every forkful.</p>
+      <div style="margin-top:2rem;">
+        <a href="meal-plans.html" class="btn btn-outline">Explore Weekly Meal Plans</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal: Custom Bowl Success Celebration -->
+  <div class="modal-overlay" id="bowl-success-modal" role="dialog" aria-modal="true" aria-label="Bowl Added Confirmation">
+    <div class="modal-card" style="text-align:center;">
+      <button type="button" class="modal-close-btn" aria-label="Close modal">&times;</button>
+      <div style="font-size:3rem; margin-bottom:1rem;">🥗✨</div>
+      <h3 style="margin-bottom:0.5rem; color:var(--deep-green);">YOUR CUSTOM BOWL IS READY!</h3>
+      <p style="color:var(--muted-text); font-size:0.95rem; margin-bottom:1.5rem;">
+        Your customized bowl has been assembled and added to your weekly selection box tray.
+      </p>
+      <div class="btn-group" style="justify-content:center;">
+        <a href="weekly-bowl-selection.html" class="btn btn-primary">Review Weekly Tray</a>
+        <button type="button" class="btn btn-outline modal-close-btn">Build Another Bowl</button>
+      </div>
+    </div>
+  </div>
+</main>
+<script src="assets/js/builder.js"></script>
+
+  <!-- Global Footer -->
+  <footer class="site-footer">
+    <!-- Footer CTA Strip -->
+    <div class="footer-cta-strip">
+      <div class="container">
+        <h2 class="footer-cta-title">MAKE FRESHNESS YOUR EVERYDAY HABIT.</h2>
+        <p class="footer-cta-desc">Join our thriving community of healthy eaters enjoying crisp, chef-crafted organic bowls delivered on your schedule.</p>
+        <a href="meal-plans.html" class="btn btn-primary btn-lg">Explore Meal Plans</a>
+      </div>
+    </div>
+    
+    <!-- Main Footer Body -->
+    <div class="footer-main">
+      <div class="container">
+        <div class="footer-grid">
+          <!-- Col 1: Brand & Bio -->
+          <div class="footer-brand">
+            <a href="index.html" aria-label="Bowl'd Home">
+              <img src="assets/images/logo.svg" alt="Bowl'd Logo" width="168" height="38">
+            </a>
+            <p>Fresh Choices. Full of Life. Handcrafted salads, wholesome grain bowls, and flexible weekly meal subscriptions made with locally-sourced organic produce.</p>
+            <div class="footer-socials">
+              <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+              </a>
+              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Twitter">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg>
+              </a>
+              <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Facebook">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+              </a>
+            </div>
+          </div>
+          
+          <!-- Col 2: Quick Links -->
+          <div>
+            <h3 class="footer-col-title">Quick Links</h3>
+            <ul class="footer-links">
+              <li><a href="index.html">Home (Signature)</a></li>
+              <li><a href="home-2.html">Home 2 (Editorial &amp; Builder)</a></li>
+              <li><a href="about.html">Our Story</a></li>
+              <li><a href="home-2.html#build-bowl">Custom Bowl Builder</a></li>
+              <li><a href="nutrition.html">Nutrition Library</a></li>
+              <li><a href="blog.html">Wellness Blog</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+          </div>
+          
+          <!-- Col 3: Menu Categories -->
+          <div>
+            <h3 class="footer-col-title">Menu Categories</h3>
+            <ul class="footer-links">
+              <li><a href="menu.html">Signature Bowls</a></li>
+              <li><a href="menu.html">Warm Grain Bases</a></li>
+              <li><a href="menu.html">Crisp Leafy Greens</a></li>
+              <li><a href="menu.html">Lean Plant & Poultry Proteins</a></li>
+              <li><a href="menu.html">Artisan Dressings</a></li>
+              <li><a href="menu.html">Cold-Pressed Juices</a></li>
+            </ul>
+          </div>
+          
+          <!-- Col 4: Subscriber Portal -->
+          <div>
+            <h3 class="footer-col-title">Subscriber Portal</h3>
+            <ul class="footer-links">
+              <li><a href="dashboard.html">Subscriber Dashboard</a></li>
+              <li><a href="my-meal-plan.html">My Meal Plan</a></li>
+              <li><a href="weekly-bowl-selection.html">Weekly Bowl Tray</a></li>
+              <li><a href="delivery-schedule.html">Delivery Schedule</a></li>
+              <li><a href="pause-delivery.html">Pause / Skip Delivery</a></li>
+              <li><a href="login.html">Subscriber Sign In</a></li>
+              <li><a href="register.html">Create New Account</a></li>
+            </ul>
+          </div>
+          
+          <!-- Col 5: Visit Us & Hours -->
+          <div>
+            <h3 class="footer-col-title">Visit & Subscribe</h3>
+            <p class="footer-contact-info">
+              <strong>Bowl'd Cafe Downtown</strong><br>
+              124 Harvest Green Way, Suite 100<br>
+              Open Daily: 8:00 AM – 9:00 PM<br>
+              Phone: (555) 345-BOWL
+            </p>
+            <div class="footer-newsletter">
+              <p>Receive fresh weekly menu drops & 15% off your first subscription order.</p>
+              <form class="newsletter-form">
+                <input type="email" class="newsletter-input" placeholder="Enter your email" required aria-label="Email address">
+                <button type="submit" class="btn btn-lime btn-sm">Join</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Bottom Row -->
+        <div class="footer-bottom">
+          <div>
+            &copy; 2026 BOWL'D Cafe & Subscriptions. All rights reserved. Sample demonstration frontend template.
+          </div>
+          <div class="footer-legal-links">
+            <a href="nutrition.html">Nutrition & Allergen Info</a>
+            <a href="contact.html">Privacy Policy</a>
+            <a href="meal-plans.html">Subscription Terms</a>
+            <a href="404.html">404 Error Page</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

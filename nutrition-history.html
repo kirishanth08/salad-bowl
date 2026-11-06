@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nutrition History | Bowl'd — Fresh Salad & Healthy Bowl Cafe</title>
+  <meta name="description" content="Manage your Bowl'd healthy salad subscription.">
+  <meta name="theme-color" content="#499A13">
+  
+  <!-- Open Graph Metadata -->
+  <meta property="og:title" content="Nutrition History | Bowl'd">
+  <meta property="og:description" content="Manage your Bowl'd healthy salad subscription.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/images/favicon.svg">
+  
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/dashboard.css">
+</head>
+<body class="dashboard-body">
+
+  <div class="dashboard-wrapper">
+    <div class="dash-sidebar-backdrop"></div>
+    <!-- Sidebar -->
+    <aside class="dashboard-sidebar">
+      <div class="sidebar-header">
+        <a href="index.html" class="sidebar-brand">
+          <img src="assets/images/logo.svg" alt="Bowl'd" width="168" height="38">
+        </a>
+        <span class="subscriber-pill">PRO</span>
+      </div>
+      
+      <div class="sidebar-menu">
+        
+          <a href="dashboard.html" class="sidebar-link  ">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+            <span>Overview</span>
+          </a>
+        
+          <a href="my-meal-plan.html" class="sidebar-link  ">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+            <span>My Meal Plan</span>
+          </a>
+        
+          <a href="weekly-bowl-selection.html" class="sidebar-link  ">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
+            <span>Weekly Bowl Selection</span>
+          </a>
+        
+          <a href="delivery-schedule.html" class="sidebar-link  ">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            <span>Delivery Schedule</span>
+          </a>
+        
+          <a href="pause-delivery.html" class="sidebar-link  ">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><rect x="9" y="9" width="6" height="6"/></svg>
+            <span>Pause Delivery</span>
+          </a>
+        
+          <a href="nutrition-history.html" class="sidebar-link  active">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 20V10M12 20V4M6 20v-6"/></svg>
+            <span>Nutrition History</span>
+          </a>
+        
+          <a href="payment-history.html" class="sidebar-link  ">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/></svg>
+            <span>Payment History</span>
+          </a>
+        
+          <a href="manage-subscription.html" class="sidebar-link  ">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+            <span>Manage Subscription</span>
+          </a>
+        
+          <a href="profile.html" class="sidebar-link  ">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+            <span>Profile Settings</span>
+          </a>
+        
+          <a href="login.html" class="sidebar-link dash-logout-link ">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></svg>
+            <span>Sign Out</span>
+          </a>
+        
+      </div>
+      
+      <div class="sidebar-footer">
+        <a href="profile.html" class="user-mini-card">
+          <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=120&q=80" alt="Alex Morgan" class="user-avatar">
+          <div class="user-info">
+            <div class="user-name" id="sidebar-user-name">Alex Morgan</div>
+            <div class="user-plan">Balanced Week (5 Bowls)</div>
+          </div>
+        </a>
+      </div>
+    </aside>
+    
+    <!-- Main Content Area -->
+    <main class="dashboard-main">
+      <!-- Topbar -->
+      <header class="dashboard-topbar">
+        <div style="display:flex; align-items:center; gap:1rem;">
+          <button type="button" class="dash-mobile-sidebar-toggle mobile-nav-toggle" aria-label="Toggle navigation drawer">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+          </button>
+          <div class="topbar-greeting">
+            <h2>HELLO, <span id="topbar-user-greeting">ALEX</span>! READY FOR A FRESH WEEK?</h2>
+            <div class="topbar-subtitle">Demo Subscriber Account &bull; Next Delivery: Wednesday, 10:00 AM</div>
+          </div>
+        </div>
+        
+        <div class="topbar-actions">
+          <a href="index.html" class="btn btn-outline btn-sm" style="display:inline-flex; align-items:center; gap:0.4rem;">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            View Public Site
+          </a>
+          <button type="button" class="theme-toggle-btn" aria-label="Toggle theme">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          </button>
+          <button type="button" class="rtl-toggle-btn" title="Toggle RTL">RTL</button>
+        </div>
+      </header>
+      
+      <!-- Content Container -->
+      <div class="dashboard-content">
+        
+  <!-- Section 1: Nutrition Header -->
+  <section class="dash-section">
+    <div class="dash-panel">
+      <div class="dash-panel-header">
+        <div class="dash-panel-title">Your Nutrition Journey with Bowl'd</div>
+        <span style="font-size:0.8rem; color:var(--muted-text);">Demo calculation data</span>
+      </div>
+      <p style="color:var(--muted-text); font-size:0.92rem; margin:0;">
+        Tracking macronutrients and micronutrients delivered through your weekly bowl trays.
+      </p>
+    </div>
+  </section>
+
+  <!-- Section 2: 4-Week Calorie Intake CSS Bar Visualizer -->
+  <section class="dash-section">
+    <div class="dash-panel">
+      <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:1.5rem; flex-wrap:wrap; gap:0.75rem;">
+        <div>
+          <h4 style="margin:0; font-size:1.15rem; color:var(--deep-green);">4-Week Calorie Intake</h4>
+          <p style="margin:0.25rem 0 0; font-size:0.85rem; color:var(--muted-text);">Pure CSS Visualizer &bull; Click any bar to inspect daily macros</p>
+        </div>
+        <span class="badge-tag">Target: 2,400 kcal/wk</span>
+      </div>
+
+      <div class="nutrition-chart-card">
+        <div class="nutrition-chart-track">
+          <div class="nutrition-bar-col" data-week="Week 1" data-kcal="2,380 kcal" data-protein="136g">
+            <div class="nutrition-bar" style="width:44px; height:105px; background:var(--fresh-green); border-radius:6px 6px 0 0; margin:0 auto; box-shadow:var(--shadow-sm);"></div>
+          </div>
+          <div class="nutrition-bar-col" data-week="Week 2" data-kcal="2,520 kcal" data-protein="148g">
+            <div class="nutrition-bar" style="width:44px; height:120px; background:var(--fresh-green); border-radius:6px 6px 0 0; margin:0 auto; box-shadow:var(--shadow-sm);"></div>
+          </div>
+          <div class="nutrition-bar-col" data-week="Week 3" data-kcal="2,290 kcal" data-protein="128g">
+            <div class="nutrition-bar" style="width:44px; height:95px; background:var(--fresh-green); border-radius:6px 6px 0 0; margin:0 auto; box-shadow:var(--shadow-sm);"></div>
+          </div>
+          <div class="nutrition-bar-col" data-week="This Week (Confirmed)" data-kcal="2,450 kcal" data-protein="145g">
+            <div class="nutrition-bar" style="width:44px; height:114px; background:var(--primary-green); border-radius:6px 6px 0 0; margin:0 auto; box-shadow:0 0 14px rgba(46,125,31,0.35);"></div>
+          </div>
+        </div>
+        <div class="nutrition-chart-labels">
+          <div class="chart-label-col">
+            <div style="font-size:0.85rem; font-weight:700;">Week 1</div>
+            <span style="font-size:0.75rem; color:var(--muted-text);">2,380 kcal</span>
+          </div>
+          <div class="chart-label-col">
+            <div style="font-size:0.85rem; font-weight:700;">Week 2</div>
+            <span style="font-size:0.75rem; color:var(--muted-text);">2,520 kcal</span>
+          </div>
+          <div class="chart-label-col">
+            <div style="font-size:0.85rem; font-weight:700;">Week 3</div>
+            <span style="font-size:0.75rem; color:var(--muted-text);">2,290 kcal</span>
+          </div>
+          <div class="chart-label-col">
+            <div style="font-size:0.85rem; font-weight:700; color:var(--primary-green);">This Week</div>
+            <span style="font-size:0.75rem; color:var(--primary-green); font-weight:700;">2,450 kcal</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 3: Macro Distribution Breakdown -->
+  <section class="dash-section">
+    <div class="dash-panel">
+      <div class="dash-panel-header">
+        <div class="dash-panel-title">Average Macronutrient Ratio</div>
+      </div>
+      <div class="grid-3">
+        <div class="dash-panel" style="margin:0; text-align:center;">
+          <div style="font-size:1.8rem; font-weight:900; color:#E65100;">32%</div>
+          <h4>Protein Average</h4>
+          <p style="font-size:0.8rem; color:var(--muted-text); margin-top:0.2rem;">29g per bowl average</p>
+        </div>
+        <div class="dash-panel" style="margin:0; text-align:center;">
+          <div style="font-size:1.8rem; font-weight:900; color:var(--deep-green);">44%</div>
+          <h4>Complex Carbs</h4>
+          <p style="font-size:0.8rem; color:var(--muted-text); margin-top:0.2rem;">High resistant fiber from grains</p>
+        </div>
+        <div class="dash-panel" style="margin:0; text-align:center;">
+          <div style="font-size:1.8rem; font-weight:900; color:#8ECA3C;">24%</div>
+          <h4>Healthy Fats</h4>
+          <p style="font-size:0.8rem; color:var(--muted-text); margin-top:0.2rem;">Mono &amp; polyunsaturated oils</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 4: Top 4 Consumed Ingredients This Month -->
+  <section class="dash-section">
+    <div class="dash-panel">
+      <div class="dash-panel-header">
+        <div class="dash-panel-title">Top 4 Ingredients Consumed this Month</div>
+      </div>
+      <div class="grid-4" style="text-align:center;">
+        <div style="padding:1rem; background:var(--bg-surface-alt); border-radius:var(--radius-md);">
+          <div style="font-size:1.8rem;">🌾</div>
+          <strong>Tricolor Quinoa</strong>
+          <div style="font-size:0.78rem; color:var(--muted-text);">In 8 bowls</div>
+        </div>
+        <div style="padding:1rem; background:var(--bg-surface-alt); border-radius:var(--radius-md);">
+          <div style="font-size:1.8rem;">🍃</div>
+          <strong>Baby Spinach</strong>
+          <div style="font-size:0.78rem; color:var(--muted-text);">In 11 bowls</div>
+        </div>
+        <div style="padding:1rem; background:var(--bg-surface-alt); border-radius:var(--radius-md);">
+          <div style="font-size:1.8rem;">🍗</div>
+          <strong>Grilled Chicken</strong>
+          <div style="font-size:0.78rem; color:var(--muted-text);">In 7 bowls</div>
+        </div>
+        <div style="padding:1rem; background:var(--bg-surface-alt); border-radius:var(--radius-md);">
+          <div style="font-size:1.8rem;">🥑</div>
+          <strong>Hass Avocado</strong>
+          <div style="font-size:0.78rem; color:var(--muted-text);">In 6 bowls</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 5: Dietary Preference Target Scores -->
+  <section class="dash-section">
+    <div class="dash-panel">
+      <h4>Dietary Scorecard</h4>
+      <div style="margin-top:0.8rem; display:flex; flex-direction:column; gap:0.6rem;">
+        <div>Fiber Goal (35g/day target): <strong>92% Met</strong></div>
+        <div>Sodium Reduction: <strong>Optimal (&lt; 400mg/meal)</strong></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 6: Dietitian Nutrition Advice -->
+  <section class="dash-section">
+    <div class="dash-panel" style="background:var(--light-green-bg);">
+      <h4 style="color:var(--deep-green);">Registered Dietitian Note for Alex:</h4>
+      <p style="color:var(--muted-text); font-size:0.88rem; margin:0.3rem 0 0;">
+        "Great job maintaining high lean protein intake! Consider adding steamed broccoli or edamame to slot #4 next week to boost dietary folate."
+      </p>
+    </div>
+  </section>
+
+  <!-- Section 7: Sample Data Disclaimer -->
+  <section class="dash-section">
+    <p style="font-size:0.78rem; color:var(--muted-text); text-align:center; margin:0;">
+      All nutrition values are calculated approximations based on standard ingredient weights and recipes.
+    </p>
+  </section>
+
+      </div>
+    </main>
+  </div>
+  
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/dashboard.js"></script>
+</body>
+</html>
