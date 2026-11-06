@@ -107,34 +107,39 @@ function getNavbar(activePage) {
         <button type="button" class="mobile-nav-toggle" aria-label="Open mobile navigation menu">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
         </button>
+      <!-- Simple Mobile Navigation Dropdown (Exact Navbar Links Only) -->
+      <div class="mobile-nav-dropdown" id="mobile-nav-dropdown">
+        <a href="index.html" class="mobile-dropdown-link ${activePage === 'home' ? 'active' : ''}">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          <span>Home</span>
+        </a>
+        <a href="about.html" class="mobile-dropdown-link ${activePage === 'about' ? 'active' : ''}">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <span>About</span>
+        </a>
+        <a href="menu.html" class="mobile-dropdown-link ${activePage === 'menu' ? 'active' : ''}">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/></svg>
+          <span>Menu</span>
+        </a>
+        <a href="meal-plans.html" class="mobile-dropdown-link ${activePage === 'plans' ? 'active' : ''}">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          <span>Meal Plans</span>
+        </a>
+        <a href="blog.html" class="mobile-dropdown-link ${activePage === 'blog' ? 'active' : ''}">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+          <span>Blog</span>
+        </a>
+        <a href="contact.html" class="mobile-dropdown-link ${activePage === 'contact' ? 'active' : ''}">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span>Contact</span>
+        </a>
+        <div class="mobile-dropdown-actions">
+          <a href="login.html" class="btn btn-sm mobile-dropdown-login">Log In</a>
+          <a href="meal-plans.html" class="btn btn-primary btn-sm mobile-dropdown-cta">Subscribe Now</a>
+        </div>
       </div>
     </div>
-  </header>
-  
-  <!-- Mobile Navigation Drawer -->
-  <div class="mobile-nav-drawer" role="dialog" aria-modal="true" aria-label="Mobile Navigation">
-    <div class="mobile-nav-header">
-      <img src="assets/images/logo.svg" alt="Bowl'd Logo" width="168" height="38">
-      <button type="button" class="mobile-nav-close modal-close-btn" aria-label="Close menu">&times;</button>
-    </div>
-    <div class="mobile-nav-links">
-      <a href="index.html" class="mobile-nav-link">Home 1 (Signature)</a>
-      <a href="home-2.html" class="mobile-nav-link">Home 2 (Editorial &amp; Bowl Builder)</a>
-      <a href="about.html" class="mobile-nav-link">About Us</a>
-      <a href="menu.html" class="mobile-nav-link">Complete Menu</a>
-      <a href="meal-plans.html" class="mobile-nav-link">Meal Plans</a>
-      <a href="nutrition.html" class="mobile-nav-link">Nutrition & Ingredients</a>
-      <a href="blog.html" class="mobile-nav-link">Blog & Recipes</a>
-      <a href="contact.html" class="mobile-nav-link">Contact Cafe</a>
-      <hr style="border:0; border-top:1px solid var(--border-subtle); margin: 1rem 0;">
-      <a href="dashboard.html" class="mobile-nav-link" style="color:var(--primary-green);">Subscriber Dashboard</a>
-      <a href="login.html" class="mobile-nav-link">Sign In</a>
-      <a href="register.html" class="mobile-nav-link">Create Account</a>
-    </div>
-    <div style="margin-top:auto; padding-top:2rem;">
-      <a href="meal-plans.html" class="btn btn-primary" style="width:100%;">Subscribe Now</a>
-    </div>
-  </div>`;
+  </header>`;
 }
 
 // Global Footer (identical on every public page)
@@ -158,7 +163,7 @@ function getFooter() {
           <!-- Col 1: Brand & Bio -->
           <div class="footer-brand">
             <a href="index.html" aria-label="Bowl'd Home">
-              <img src="assets/images/logo.svg" alt="Bowl'd Logo" width="168" height="38">
+              <img src="assets/images/logo-light.svg" alt="Bowl'd Logo" width="168" height="38">
             </a>
             <p>Fresh Choices. Full of Life. Handcrafted salads, wholesome grain bowls, and flexible weekly meal subscriptions made with locally-sourced organic produce.</p>
             <div class="footer-socials">
@@ -277,7 +282,7 @@ function getDashboardLayout(activePage, pageTitle, content) {
     <aside class="dashboard-sidebar">
       <div class="sidebar-header">
         <a href="index.html" class="sidebar-brand">
-          <img src="assets/images/logo.svg" alt="Bowl'd" width="168" height="38">
+          <img src="assets/images/logo-light.svg" alt="Bowl'd" width="168" height="38">
         </a>
         <span class="subscriber-pill">PRO</span>
       </div>
