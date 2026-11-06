@@ -163,7 +163,7 @@ function getFooter() {
           <!-- Col 1: Brand & Bio -->
           <div class="footer-brand">
             <a href="index.html" aria-label="Bowl'd Home">
-              <img src="assets/images/logo-light.svg" alt="Bowl'd Logo" width="168" height="38">
+              <img src="assets/images/logo.svg" alt="Bowl'd Logo" width="168" height="38">
             </a>
             <p>Fresh Choices. Full of Life. Handcrafted salads, wholesome grain bowls, and flexible weekly meal subscriptions made with locally-sourced organic produce.</p>
             <div class="footer-socials">
@@ -282,7 +282,7 @@ function getDashboardLayout(activePage, pageTitle, content) {
     <aside class="dashboard-sidebar">
       <div class="sidebar-header">
         <a href="index.html" class="sidebar-brand">
-          <img src="assets/images/logo-light.svg" alt="Bowl'd" width="168" height="38">
+          <img src="assets/images/logo.svg" alt="Bowl'd Logo" width="168" height="38">
         </a>
         <span class="subscriber-pill">PRO</span>
       </div>

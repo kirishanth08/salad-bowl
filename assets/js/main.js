@@ -35,10 +35,9 @@ function initTheme() {
   });
 }
 
-function updateLogos(theme) {
-  const isDark = theme === 'dark' || document.documentElement.getAttribute('data-theme') === 'dark';
-  document.querySelectorAll('.site-header .navbar-brand img, .auth-brand img, .auth-logo img').forEach(img => {
-    img.src = isDark ? 'assets/images/logo-light.svg' : 'assets/images/logo.svg';
+function updateLogos() {
+  document.querySelectorAll('.site-header .navbar-brand img, .footer-brand img, .sidebar-brand img, .auth-brand img, .auth-logo img').forEach(img => {
+    img.src = 'assets/images/logo.svg';
   });
 }
 
